@@ -2,6 +2,12 @@
 본 리포지터리는 리액트를 중심으로 웹 개발 전반에 관한 내용을 잡다하게 공부하기 위해 만든 리포지터리입니다.
 전에 이미 한번 동일한 내용으로 리포지터리를 만든 바가 있는데 로컬에서 초기 환경 세팅하고 branch 연결 과정에서 머지 충돌이 일어났고 멘탈 털려서 걍 삭제하고 다시 만듬.
 
+git pull --rebase origin main
+만약 로컬 말고 github에서 readme.md같은 파일 수정해서 로컬이랑 충돌할때는 위 명령어 입력해서 동기화시켜주자
+안그러면 터미널에서 공포스러운 경고를 띄움과 함께 git push를 사용할 수 없게 된다.
+
+branch 생성은 신중하게 하자. 머지 충돌 관리할때 대가리 아파온다
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
