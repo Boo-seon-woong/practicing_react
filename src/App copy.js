@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import MyButton from './func';
 import './App.css';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h1>Hello react and npx!</h1>
-        <MyButton/>
         <p>first time handling react_11 Mar 2024</p>
         <a
           className="App-link"
