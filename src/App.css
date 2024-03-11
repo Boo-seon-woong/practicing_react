@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+
+p{
+  font-size:12px;
+}
+h1{
+  font-size: 30px;
+}
+.first_css_in_React {
+  font-size: 15px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

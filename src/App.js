@@ -12,7 +12,7 @@ function App() {
         </p>
         <h1>Hello react and npx!</h1>
         <MyButton/>
-        <p>first time handling react_11 Mar 2024</p>
+        <p className='first_css_in_React'>first time handling react_11 Mar 2024</p>
         <a
           className="App-link"
           href="https://reactjs.org"
