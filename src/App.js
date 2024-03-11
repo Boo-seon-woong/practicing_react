@@ -15,6 +15,7 @@ function App() {
         <h1>Hello react and npx!</h1>
         <MyButton/>
         <p className='first_css_in_React'>{user.name} first time handling react_11 Mar 2024</p>
+        <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png' className='App-logo'/>
         <a
           className="App-link"
           href="https://reactjs.org"
