@@ -8,6 +8,8 @@ git pull --rebase origin main
 
 branch 생성은 신중하게 하자. 머지 충돌 관리할때 대가리 아파온다
 
+github으로 리액트 파일 호스팅 성공...... 너무 가시밭길이었다...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
