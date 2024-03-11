@@ -9,6 +9,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h1>Hello react and npx!</h1>
+        <p>first time handling react_11 Mar 2024</p>
         <a
           className="App-link"
           href="https://reactjs.org"
