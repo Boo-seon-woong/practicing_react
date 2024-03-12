@@ -1,6 +1,14 @@
+import { useState } from "react";
+
 function MyButton() {
+  let [count, setCount] = useState(1);
+
+
   function handleclick(){
-    alert('눌렀냐? ㅎㅇ');
+    setCount(count+1);
+
+    if(count<3)alert(`${count}번 눌렀네 ㅎㅇ`);
+    else(alert(`${count}번이나 눌렀네 ㄷㄷ`));
   }
     return (
       <button onClick={handleclick}>
