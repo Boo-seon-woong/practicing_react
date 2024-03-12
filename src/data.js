@@ -11,7 +11,7 @@ const products = [
     { title: 'Cabbage', id: 11 },
     { title: 'Garlic', id: 2 },
     { title: 'Apple', id: 3 },
-    { title: 'Cabbage', id: 12 },
+    { title: '일일이 이름 넣기 귀찮아', id: 12 },
     { title: 'Garlic', id: 2 },
     { title: 'Apple', id: 3 },
     { title: 'Cabbage', id: 13 },

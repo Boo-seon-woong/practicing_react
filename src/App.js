@@ -24,7 +24,7 @@ function App() {
         >
           Learn React
         </a>
-        {products.map((v)=>(<ScreenMap id={v.id} title={v.title}/>))}
+        {products.map((v,index)=>(<ScreenMap id={index+1} title={v.title}/>))}
       </header>
     </div>
   );
