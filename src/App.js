@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import MyButton from './func';
-import user from './data';
+import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
 
