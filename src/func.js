@@ -1,6 +1,9 @@
 function MyButton() {
+  function handleclick(){
+    alert('눌렀냐? ㅎㅇ');
+  }
     return (
-      <button>
+      <button onClick={handleclick}>
         This button is imported from func.js file. What a OOP!
       </button>
     );
