@@ -5,5 +5,20 @@ function MyButton() {
       </button>
     );
   }
-
-  export default MyButton;
+/*
+  const ScreenMap = (props) => {
+    return (
+        <div>
+			<h3>{props.id}({props.title})</h3>
+        </div>
+    );
+};
+*/
+  function ScreenMap(props){
+    return (
+      <div>
+        <h1>id:{props.id} | {props.title}</h1>
+      </div>
+    )
+  }
+export {MyButton,ScreenMap};

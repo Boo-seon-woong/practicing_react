@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import MyButton from './func';
+import {MyButton,ScreenMap} from './func';
 import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
@@ -24,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        {products.map((v)=>(<ScreenMap id={v.id} title={v.title}/>))}
       </header>
     </div>
   );
