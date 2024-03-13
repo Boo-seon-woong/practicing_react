@@ -23,7 +23,7 @@ import { useState } from "react";
   return(
    <>
    <p>qwer</p>
-   <h1>count={count}</h1>
+   <h1>count={count-1}</h1>
    <MyButton count={count} onClick={handleclick}/>
    <MyButton count={count} onclick={handleclick}/>
    </>
