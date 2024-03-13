@@ -8,7 +8,9 @@ function MyButton() {
     setCount(count+1);
 
     if(count<3)alert(`${count}번 눌렀네 ㅎㅇ`);
-    else(alert(`${count}번이나 눌렀네 ㄷㄷ`));
+    else if(count<5)(alert(`${count}번이나 눌렀네 ㄷㄷ`));
+    else if(count<1000)(alert(`여기서 더 누른다고 뭐 특별한 문구가 나올것 같다고 생각했다면 정답임\n 이제 ${count}번임;;;`));
+    else(alert(`you dirty hacker`));
   }
     return (
       <button onClick={handleclick}>
