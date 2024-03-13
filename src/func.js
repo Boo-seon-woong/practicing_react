@@ -2,7 +2,7 @@ import { useState } from "react";
 
  function CombinedMyButton(){
    let [count, setCount] = useState(1);
-   function handleclick({count}){
+   function handleclick(){
     setCount(count+1);
   
     if(count<3)alert(`${count}번 눌렀네 ㅎㅇ`);
