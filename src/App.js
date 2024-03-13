@@ -16,7 +16,7 @@ function App() {
         </p>
         <h1>Hello react and jsx!</h1>
         <MyButton/>
-        <p className='first_css_in_React'>{user.name} first time handling react_11 Mar 2024</p>
+        <p className='first_css_in_React'>{user.name} first time handling react_11 Mar 2024<br/>수정사항 반영하려면 npm run build</p>
         <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png' className='App-logo'/>
         <a
           className="App-link"
