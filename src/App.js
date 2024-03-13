@@ -14,7 +14,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>Hello react and npx!</h1>
+        <h1>Hello react and jsx!</h1>
         <MyButton/>
         <p className='first_css_in_React'>{user.name} first time handling react_11 Mar 2024</p>
         <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png' className='App-logo'/>
