@@ -7,7 +7,8 @@ import { useState } from "react";
   
     if(count<3)alert(`${count}번 눌렀네 ㅎㅇ`);
     else if(count<5)(alert(`${count}번이나 눌렀네 ㄷㄷ`));
-    else if(count<1000)(alert(`여기서 더 누른다고 뭐 특별한 문구가 나올것 같다고 생각했다면 정답임\n 이제 ${count}번임;;;`));
+    else if(count<10)(alert(`여기서 더 누른다고 뭐 특별한 문구가 나올것 같다고 생각했다면 정답임\n 이제 ${count}번임;;;`));
+    else if(count<1000)(alert(`그럼에도 누르는 당신, 의지를 가져라\n이제 ${count}번임`));
     else(alert(`you dirty hacker`));
   }
   
