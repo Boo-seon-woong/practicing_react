@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {MyButton,ScreenMap} from './func';
+import {MyButton,ScreenMap,CombinedMyButton} from './func';
 import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
@@ -27,6 +27,8 @@ function App() {
           Learn React
         </a>
         <p>아니 세미콜론 안찍어도 된다니 js 왤케 근본없음? 지가 파이썬인줄 아나</p>
+        <CombinedMyButton/>
+        <p>이 위로 CombinedMyButton이 있?어야 하는디??</p>
         {products.map((v,index)=>(<ScreenMap id={index+1} title={v.title}/>))}
       </header>
     </div>

@@ -3,7 +3,6 @@ import { useState } from "react";
 function MyButton() {
   let [count, setCount] = useState(1);
 
-
   function handleclick(){
     setCount(count+1);
 
@@ -17,6 +16,20 @@ function MyButton() {
         This button is imported from func.js file. What a OOP!
       </button>
     );
+  }
+  function CombinedMyButton(){
+    let [count, setCount] = useState(1);
+
+    function handleclick(){
+      setCount(count+1);
+    }
+    return(<>
+    <p>qwer</p>
+    <h1>count={count}</h1>
+    <MyButton count={count} onClick={handleclick}/>
+    <MyButton count={count} onclick={handleclick}/>
+    </>
+    )
   }
 /*
   const ScreenMap = (props) => {
@@ -34,4 +47,4 @@ function MyButton() {
       </div>
     )
   }
-export {MyButton,ScreenMap};
+export {MyButton,ScreenMap,CombinedMyButton};
