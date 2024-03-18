@@ -4,14 +4,14 @@ import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
+import { Square,Board } from './tto';
 
-
-function squ() {
+function App() {
   return (
     <div className="App">
         <div className style={{ backgroundColor: "#282c34", marginBottom:0}}>
-        <button className='square'>x</button>
-        <h1 style={{margin:0}}>asdfa</h1>
+        <Board/>
+
         </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -39,4 +39,4 @@ function squ() {
   );
 }
 
-export default squ;
+export default App;

@@ -65,3 +65,9 @@ h1{
   text-align: center;
   width: 34px;
 }
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
