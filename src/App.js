@@ -6,9 +6,13 @@ import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
 
 
-function App() {
+function squ() {
   return (
     <div className="App">
+        <div className style={{ backgroundColor: "#282c34", marginBottom:0}}>
+        <button className='square'>x</button>
+        <h1 style={{margin:0}}>asdfa</h1>
+        </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -35,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default squ;
