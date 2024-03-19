@@ -15,7 +15,7 @@ export default function Board() {
   function handleClick(i) {
     setsum(sum+1);
     const nextSquares = squares.slice();
-    if(sum%2==0) nextSquares[i] = 'O';
+    if(sum%2==1) nextSquares[i] = 'O';
     else nextSquares[i]='X';
     setSquares(nextSquares);
   }
