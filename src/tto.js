@@ -9,11 +9,14 @@ function Square({ value, onSquareClick }) {
 }
 
 export default function Board() {
+  const [sum,setsum] = useState(0,null);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
+    setsum(sum+1);
     const nextSquares = squares.slice();
-    nextSquares[i] = 'X';
+    if(sum%2==0) nextSquares[i] = 'O';
+    else nextSquares[i]='X';
     setSquares(nextSquares);
   }
 
