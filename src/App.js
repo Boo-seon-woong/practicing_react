@@ -9,7 +9,7 @@ import { Square,Board } from './tto';
 function App() {
   return (
     <div className="App">
-        <div className style={{ backgroundColor: "#282c34", marginBottom:0}}>
+        <div className style={{ backgroundColor: "#282c34", marginBottom:0, alignContent:"center"}}>
         <Board/>
 
         </div>
