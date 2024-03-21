@@ -50,7 +50,11 @@ h1{
 
 
 
-
+.cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 table {
   margin-left:auto; 
@@ -76,5 +80,5 @@ table {
   clear: both;
   content: '';
   display: table;
-  align-items: right;
+  
 }
