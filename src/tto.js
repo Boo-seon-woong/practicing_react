@@ -47,6 +47,7 @@ export default function Board() {
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
       </div>
+      <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라</p>
     </>
   );
 }

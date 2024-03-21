@@ -32,7 +32,7 @@ function App() {
         </a>
         <p>아니 세미콜론 안찍어도 된다니 js 왤케 근본없음? 지가 파이썬인줄 아나</p>
         <CombinedMyButton/>
-        <p>이 위로 CombinedMyButton이 있?어야 하는디??</p>
+        <p>이 위로 CombinedMyButton이 있?어야 하는디??<br/>.<br/>.<br/>.<br/>세상에는 npm run deploy를 npm start deploy로 헷갈리는 바보도 있대!</p>
         {products.map((v,index)=>(<ScreenMap id={index+1} title={v.title}/>))}
       </header>
     </div>
