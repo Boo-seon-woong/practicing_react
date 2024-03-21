@@ -7,12 +7,34 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
+}
 
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
+    if(calculateWinner(squares)){
+      return;
+    }
     if(squares[i]){
       return;
     }
@@ -21,6 +43,13 @@ export default function Board() {
     else nextSquares[i]='O';
     setXIsNext(!xIsNext);
     setSquares(nextSquares);
+  }
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = "승자: " + winner;
+  } else {
+    status = (xIsNext ? "X"+ "의 차례" : "O" + "의 차례");
   }
 
   return (
@@ -47,9 +76,10 @@ export default function Board() {
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
       </div>
+      <div className="status" style={{color:"white"}}>{status}</div>
       <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라</p>
     </>
   );
 }
 
-export {Square,Board};
+

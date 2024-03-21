@@ -4,7 +4,7 @@ import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
-import { Square,Board } from './tto';
+import Board from './tto';
 
 function App() {
   return (
