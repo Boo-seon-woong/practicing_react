@@ -14,7 +14,7 @@ function App() {
         <div className='cover'>
         <Game/>
         </div>
-        <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라</p>
+        <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라<br/>.<br/>.<br/>.<br/>공부 안하다가 다시 할라니까 적응안된다;; 다시 열심히 해봐야지-2024.04.01</p>
       <a style={{color:"skyblue",textDecoration:"none"}}
           href="https://github.com/Boo-seon-woong"
         >
