@@ -26,6 +26,7 @@ h1{
 
 .App-header {
   background-color: #282c34;
+  margin-top: -15px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
