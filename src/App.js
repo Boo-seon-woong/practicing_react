@@ -4,14 +4,22 @@ import {user,products} from './data';
 import './App.css';
 import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
-import Board from './tto';
+import Game from './tto';
 
 function App() {
   return (
     <div className="App">
-        <div className style={{ backgroundColor: "#282c34", marginBottom:0, alignContent:"center"}}>
-        <Board/>
-
+        <div style={{ backgroundColor: "#282c34", marginBottom:0, alignContent:"center"}}>
+        <h1 style={{color:"white"}}>내맘대로 만드는 틱택토<br/>by BOO SEONWOONG</h1>
+        <div className='cover'>
+        <Game/>
+        </div>
+        <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라</p>
+      <a style={{color:"skyblue",textDecoration:"none"}}
+          href="https://github.com/Boo-seon-woong"
+        >
+          Click to visit Boo's github page
+        </a>
         </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

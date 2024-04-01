@@ -27,10 +27,7 @@ function calculateWinner(squares) {
   return null;
 }
 
-export default function Board() {
-  const [xIsNext, setXIsNext] = useState(true);
-  const [squares, setSquares] = useState(Array(9).fill(null));
-
+function Board({xIsNext,squares,onPlay}) {
   function handleClick(i) {
     if(calculateWinner(squares)){
       return;
@@ -41,8 +38,10 @@ export default function Board() {
     const nextSquares = squares.slice();
     if(xIsNext) nextSquares[i] = 'X';
     else nextSquares[i]='O';
-    setXIsNext(!xIsNext);
-    setSquares(nextSquares);
+    //setXIsNext(!xIsNext);
+    //setSquares(nextSquares);
+
+    onPlay(nextSquares);
   }
   const winner = calculateWinner(squares);
   let status;
@@ -54,7 +53,6 @@ export default function Board() {
 
   return (
     <>
-      <h1 style={{color:"white"}}>내맘대로 만드는 틱택토 by BOO SEONWOONG</h1>
       <div className="board-row">
         <div className='cover'>
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -77,9 +75,48 @@ export default function Board() {
         </div>
       </div>
       <div className="status" style={{color:"white"}}>{status}</div>
-      <p style={{color:"gray"}}><br/>.<br/>.<br/>.<br/>.<br/>사실 리액트 컴포넌트 가운데정렬 어케하는지 몰라서 한참 구글링함;; 아 텍스트랑은 방식 다르더라고 ㅋㅋㅋㅋ<br/>flex로 deploy하는 container용 div로 감싸줘야 하더라</p>
     </>
   );
 }
 
 
+export default function Game(){
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)])
+  const currentSquares = history[history.length - 1];
+
+  function handlePlay(nextSquares) {
+    setHistory([...history, nextSquares]);
+    setXIsNext(!xIsNext);
+    //
+  }
+
+  function jumpTo(nextMove){
+    //todo
+  }
+
+  const moves = history.map((squares, move) => {
+    let description;
+    if (move > 0){
+      description = 'Go to move #' + move;
+    } else{
+      description = 'Go to game start';
+    }
+    return (
+      <li>
+        <button onClick={() => jumpTo(move)}>{description}</button>
+      </li>
+    )
+  })
+
+  return (
+    <div className="game">
+      <div className='game-board'>
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+      </div>
+      <div className='game-info'>
+        <ol>{moves}</ol>
+      </div>
+    </div>
+  )
+}
