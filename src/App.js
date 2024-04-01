@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
         <div style={{ backgroundColor: "#282c34", marginBottom:0, alignContent:"center"}}>
-        <h1 style={{color:"white"}}>내맘대로 만드는 틱택토<br/>by BOO SEONWOONG</h1>
+        <h1 style={{color:"white"}}>내맘대로 만드는 틱택토</h1>
+        <p style={{color:"white"}}>by BOO SEONWOONG<br/><br/>latest update date : 2024.04.01</p>
         <div className='cover'>
         <Game/>
         </div>

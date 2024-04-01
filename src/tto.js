@@ -108,7 +108,7 @@ export default function Game(){
       description = 'Go to game start';
     }
     return (
-      <li key={move}>
+      <li key={move} style={{listStyleType:"none"}}>
         <button onClick={() => jumpTo(move)}>{description}</button>
       </li>
     )
@@ -120,7 +120,7 @@ export default function Game(){
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
       </div>
       <div className='game-info'>
-        <ol>{moves}</ol>
+        <ul>{moves}</ul>
       </div>
     </div>
   )
